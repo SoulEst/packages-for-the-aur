@@ -65,6 +65,7 @@ package() {
 ## make directories
 mkdir -p \
 	"$pkgdir"/usr/bin/ \
+    "$pkgdir"/usr/lib/udev/rules.d/ \
 	"$pkgdir"/usr/share/applications/ \
 	"$pkgdir"/usr/share/pixmaps/ \
 	"$pkgdir"/usr/share/qtsixa/ \
@@ -89,6 +90,7 @@ cd "$srcdir/QtSixA-$pkgver/qtsixa"
 	install -m 755 sixad-lq "$pkgdir"/usr/bin/
 	install -m 755 sixad-notify "$pkgdir"/usr/bin/
 #	install -m 644 manual/* "$pkgdir"/usr/share/doc/qtsixa/manual/
+    install -m 644 97-sixpair.rules "$pkgdir"/usr/lib/udev/rules.d/
 	install -m 644 game-profiles/* "$pkgdir"/usr/share/qtsixa/game-profiles/
 	install -m 644 gui/*.py "$pkgdir"/usr/share/qtsixa/gui/
 	install -m 644 icons/* "$pkgdir"/usr/share/qtsixa/icons/
