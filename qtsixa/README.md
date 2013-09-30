@@ -20,7 +20,7 @@ QtSixA also registers the Sixaxis and Keypad's MAC/ID in the joystick name (ex: 
 
 This package is based off QtSixA 1.5.1 and is patched to support systemd (plus bring it up to date).
 
-Many thanks go to [yimm][2], [QXQ][6], [kode54][7] and [maandree][3] for the major patches to the software, [maggu2810][8] for the service file (and [yck][9] for pointing it out).
+Many thanks go to [yimm][2], [QXQ][6], [kode54][7] and [maandree][3] for the major patches to the software, [maggu2810][8] for the udev rules files and the service file (and [yck][9] for pointing it out).
 
 ---
 
