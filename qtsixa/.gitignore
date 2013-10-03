@@ -15,3 +15,8 @@
 # Archives
 *.xz
 *.tar.gz
+
+# Directories
+QtSixA-1.5.1/
+src/
+pkg/
