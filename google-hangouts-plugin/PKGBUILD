@@ -1,0 +1,27 @@
+# Maintainer: Nolan Haynes <nolanhaynes@gmail.com>
+#
+pkgname=google-hangouts-plugin
+pkgver=5.3.1.0
+pkgrel=1
+pkgdesc="Installs the Debian package for the Google+ Hangouts Plugin on Arch Linux"
+arch=('i686' 'x86_64')
+url="http://google.com/tools/dlpage/hangout/download.html"
+depends=('alsa-lib' 'cairo' 'gtk2')
+license=('unknown')
+
+case $CARCH in
+	'x86_64')
+		_arch='amd64'
+        md5sums=('912766af3af45097afaf01ae33cfb46e')
+		;;
+	'i686')
+		_arch='i386'
+        md5sums=('5cefaa0c3b755174288f6284345e7518')
+		;;
+esac
+
+source=("google-talkplugin_current_${_arch}.deb")
+
+package() {
+	tar -zxf data.tar.gz -C "${pkgdir}"
+}
