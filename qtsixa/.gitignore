@@ -1,0 +1,22 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Archives
+*.xz
+*.tar.gz
+
+# Directories
+QtSixA-1.5.1/
+src/
+pkg/
